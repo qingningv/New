@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <title>member</title>
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="member.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/member.css">
+    <meta name="referrer" content="never">
 </head>
  
 <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top"  data-bs-theme="dark" style="background-color: green;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">吃货小花狮</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">主頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">登入</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  关于我们
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">关于网页</a></li>
+                  <li><a class="dropdown-item" href="member.html">制作团队</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <div id="wrap">
         <div id="main">
             <ul id="pageUl" type="circle">
@@ -18,66 +52,47 @@
                 <li id="pageUlLi2" class="pageUlLi">&nbsp;</li>
                 <li id="pageUlLi3" class="pageUlLi">&nbsp;</li>
             </ul>
+
             <div style="background-color: #a0c8a5" id="page1" class="page">
-              <div class="nav">
-                <div class="title">UTF-8</div>
-            </div>
-              <div class="container">
-                <div class="description">
-                    <ul>
-                        <li>姓名：</li>
-                        <li>联系方式：</li>
-                        <li>兴趣爱好：</li>
-                        <li>个性签名：</li>
-                        <li>个人网页：</li>
-                    </ul>
-                </div>
-                <div class="picture"> 
-                    <img src="pic/picture1.jpg" title="member1">
+                <div class="card">
+                    <div class="card-body">
+                      This is some text within a card body.
+                    </div>
                 </div>
             </div>
-          </div>
+
             <div style="background-color: #5cb85c" id="page2" class="page">
-              <div class="nav">
-                <div class="title">UTF-8</div>
-            </div>
+              
               <div class="container">
-                <div class="description">
-                    <ul>
-                        <li>姓名：</li>
-                        <li>联系方式：</li>
-                        <li>兴趣爱好：</li>
-                        <li>个性签名：</li>
-                        <li>个人网页：</li>
-                    </ul>
+                <div class="description" id="member2">
+                    
                 </div>
-                <div class="picture"> 
-                    <img src="pic/picture2.jpg" title="member2">
+                <div class="picture" id="picture2"> 
+                    
                 </div>
             </div>
             </div>
             <div style="background-color: #5ab382" id="page3" class="page">
               <div class="nav">
                 <div class="title">UTF-8</div>
+                <div class="logout">登出</div>
+                <button class="game" onclick="play()">剪刀石头布小游戏</button>
             </div>
               <div class="container">
-                <div class="description">
-                    <ul>
-                        <li>姓名：</li>
-                        <li>联系方式：</li>
-                        <li>兴趣爱好：</li>
-                        <li>个性签名：</li>
-                        <li>个人网页：</li>
-                    </ul>
+                <div class="description" id="member3">
+                    
                 </div>
-                <div class="picture"> 
-                    <img src="pic/picture3.jpg" title="member3">
+                <div class="picture" id="picture3"> 
+                  
                 </div>
             </div>
             </div>
         </div>
     </div>
 </body>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script  src="main.js"></script>
 <script type="text/javascript">
     //改变窗口大小时调整图片大小
     window.onload = resizeImages;
@@ -139,7 +154,7 @@
             }
             endTime = new Date().getTime();
         } else {
-            event.preventDefault();
+            
         }
     }
  
@@ -172,5 +187,67 @@
 	    toPage(3);
 	}
 </script>
- 
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ <script>
+    $.ajax({
+		method: 'get',
+        url: 'https://3a60cb8f.r8.cpolar.top/getMemberById/1',
+        success: function(res) {
+            console.log(res)
+            let member1 = '';
+            member1 +=`<ul>
+                        <li>姓名：${res.name}</li>
+                        <li>联系方式：${res.contact_way}</li>
+                        <li>兴趣爱好：${res.hobby}</li>
+                        <li>个性签名：${res.signature}</li>
+                        <li>个人网页：${res.web}</li>
+                    </ul>`;
+            document.getElementById('member1').innerHTML = member1;
+            let picture1 = '';
+            picture1 += `<img src="${res.picUrl}" title="${res.name}" alt="${res.name}">`;
+            document.getElementById('picture1').innerHTML = picture1;
+        }
+	});
+    $.ajax({
+		method: 'get',
+        url: 'https://3a60cb8f.r8.cpolar.top/getMemberById/2',
+        success: function(res) {
+            console.log(res)
+            let member1 = '';
+            member1 +=`<ul>
+                        <li>姓名：${res.name}</li>
+                        <li>联系方式：${res.contact_way}</li>
+                        <li>兴趣爱好：${res.hobby}</li>
+                        <li>个性签名：${res.signature}</li>
+                        <li>个人网页：${res.web}</li>
+                    </ul>`;
+            document.getElementById('member2').innerHTML = member1;
+            let picture2 = '';
+            picture2 += `<img src="${res.picUrl}" title="${res.name}" alt="${res.name}">`;
+            document.getElementById('picture2').innerHTML = picture2;
+        }
+	});
+    $.ajax({
+		method: 'get',
+        url: 'https://3a60cb8f.r8.cpolar.top/getMemberById/3',
+        success: function(res) {
+            console.log(res)
+            let member1 = '';
+            member1 +=`<ul>
+                        <li>姓名：${res.name}</li>
+                        <li>联系方式：${res.contact_way}</li>
+                        <li>兴趣爱好：${res.hobby}</li>
+                        <li>个性签名：${res.signature}</li>
+                        <li>个人网页：${res.web}</li>
+                    </ul>`;
+            document.getElementById('member3').innerHTML = member1;
+            let picture3 = '';
+            picture3 += `<img src="${res.picUrl}" title="${res.name}" alt="${res.name}">`;
+            document.getElementById('picture3').innerHTML = picture3;
+        }
+	});
+
+    
+ </script>
+ <script src="game.js"></script>
 </html>

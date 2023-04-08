@@ -1,0 +1,22 @@
+.container{
+    margin: 5% auto;
+    width: 80%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.canteen{
+    width: 50%;
+    margin-top: 10%;
+}
+
+.canteen-name{
+    background-color: #c7edcc;
+    color: #101010;
+    margin-top: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

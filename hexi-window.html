@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>菜品</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/canteen.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top"  data-bs-theme="dark" style="background-color: green;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">吃货小花狮</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">主頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">登入</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  关于我们
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">关于网页</a></li>
+                  <li><a class="dropdown-item" href="member.html">制作团队</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--main-->
+      <div class="container">
+        <form class="d-flex search" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+
+        <div>
+          <div>
+            
+          </div>
+        </div>
+    </div>
+
+
+      
+
+      <!--footer-->
+      <div style="margin-bottom: 50%;"></div>
+      <nav class="navbar fixed-bottom bg-body-tertiary">
+        <div class="footer">
+          <div class="row row-cols-5">
+            <div class="col" onclick="location.href='canteen.html'"><img src="icons/normal_u6.png" class="icons"><p class="icon-word">菜品</p></div>
+            <div class="col" onclick="location.href='community.html'"><img src="icons/normal_u8.png" class="icons"><p class="icon-word">社区</p></div>
+            <div class="col" onclick="location.href='index.html'"><img src="icons/normal_u14.png" class="icons"><p class="icon-word">首页</p></div>
+            <div class="col" onclick="location.href='record.html'"><img src="icons/normal_u7.png" class="icons"><p class="icon-word">打卡</p></div>
+            <div class="col" onclick="location.href='personal.html'"><img src="icons/normal_u5.png" class="icons"><p class="icon-word">个人</p></div>
+          </div>
+        </div>
+      </nav>
+
+      
+      
+    
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>

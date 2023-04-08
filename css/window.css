@@ -1,0 +1,40 @@
+/*window*/
+.canteen-window{
+    margin: 2%;
+    width: 10%;
+    height: 5%;
+}
+
+.like{
+    position:relative;
+}
+
+.like-icon{
+    position:absolute;
+    width:50px;
+    height:50px;
+    right:8%;
+}
+
+.like-number{
+    font: 2em sans-serif;
+    position:absolute;
+    right:5%;
+    margin-top: 1%;
+}
+
+.order {
+    float: right;
+    margin-top :-5%;
+    margin-bottom: 2%;
+}
+/*food*/
+.food-record {
+    float: right;
+    margin:10px;
+}
+
+.food-record{
+    position: absolute;
+    right:15%;
+}

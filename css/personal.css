@@ -1,0 +1,15 @@
+.container{
+    margin: 5% auto;
+    width: 80%;
+
+    padding: 10px;
+}
+
+.personal-icon{
+    width: 60%;
+}
+
+#change_personal_data{
+    margin-top: 5%;
+    border-radius: 10px;
+}

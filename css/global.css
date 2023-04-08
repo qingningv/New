@@ -1,0 +1,19 @@
+.footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .icons {
+    width: 64px;
+    height: 66px;
+    box-sizing: border-box;
+  }
+
+  .icon-word{
+    margin-top: 5%;
+  }
